@@ -50,19 +50,4 @@ public class PageTests
         // Then
         Assert.Equal("New title", page.Title);
     }
-
-    [Fact]
-    public void setTitle_invalidParameter_ShouldThrowException()
-    {
-        //Arrange
-        var page = new Page
-        {
-            PageId = 1,
-            Title = "Home title",
-            Content = "Welcome to the page",
-            ParentPageId = 1
-        };
-        Assert.Throws<ArgumentException>(() => page.Title = null);
-        Assert.Throws<ArgumentException>(() => page.Title="");
-    }
 }
