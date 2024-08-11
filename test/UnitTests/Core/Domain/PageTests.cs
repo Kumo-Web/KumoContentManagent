@@ -12,7 +12,6 @@ public class PageTests
         var id = 1;
         var title = "Home title";
         var content = "Welcome to the page";
-        var created = DateTime.UtcNow;
         var updated = DateTime.UtcNow;
         var parentPageId = 1;
 
