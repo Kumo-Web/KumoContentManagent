@@ -11,5 +11,5 @@ public class ContentDbContext : DbContext
     }
 
     public DbSet<Page> Pages { get; set; }
-    public int MyProperty { get; set; }
+    public DbSet<Element> Elements { get; set; }
 }
