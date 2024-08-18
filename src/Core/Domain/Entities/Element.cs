@@ -9,6 +9,7 @@ public class Element
     public int? PageId { get; set; }
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
+    public Page Page { get; set; }
     public Element()
     {
         CreatedAt = DateTime.UtcNow;

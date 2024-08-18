@@ -10,7 +10,8 @@ public class Page
     public int? ParentPageId { get; set; }
     public DateTime CreatedAt { get; private set; }
     public DateTime? UpdatedAt { get; set; }
-
+    public Page ParentPage { get; set; }
+    public ICollection<Page> ChildPages { get; set; }
     public Page()
     {
         CreatedAt = DateTime.UtcNow;
