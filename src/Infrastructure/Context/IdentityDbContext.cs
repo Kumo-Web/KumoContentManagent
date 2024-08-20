@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Context;
 
-public class IdentityDbContext : IdentityDbContext<User, Role, string>
+public class IdentityDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, Guid>
 {
     public IdentityDbContext(DbContextOptions<IdentityDbContext> options) : base(options) {}
 
